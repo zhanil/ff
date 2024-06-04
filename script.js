@@ -16,7 +16,7 @@ window.onload = function () {
       .then((response) => response.json())
       .then((data) => {
         const { session_id, technologies } = data;
-        const url = "https://demo.biometric.kz/flow/" + session_id;
+        const url = "https://remote.biometric.kz/flow/" + session_id;
         window.open(url, "_blank");
       });
   });
